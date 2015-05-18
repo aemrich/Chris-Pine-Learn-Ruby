@@ -1,0 +1,1 @@
+puts "gets, puts, *, / , +, =, .to_s, .to_f, .to_i, .chomp"
