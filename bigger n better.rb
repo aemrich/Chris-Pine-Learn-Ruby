@@ -1,3 +1,5 @@
+#git test of -a
+
 puts 'What\'s your favorite number?'
 
 number = gets.chomp

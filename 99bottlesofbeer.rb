@@ -1,3 +1,5 @@
+#git test of -a
+
 number = 100
 
 while number > 1
