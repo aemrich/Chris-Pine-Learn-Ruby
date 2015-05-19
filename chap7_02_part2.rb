@@ -8,11 +8,11 @@ end
 words.pop
 
 words.each do |word|
-		if words.last >= word
-			then transfer = words.last
-			order.push transfer
-			words.pop
-		end
+	if words.last < word
+		then transfer = words.last
+		order.push transfer
+		words.pop
+	end
 end
 
 
