@@ -1,18 +1,17 @@
-word = []
-order = []
+words = []
+ordered = []
 
-while word.last!=''
-	word.push gets.chomp
+
+while words.last!=''
+	words.push gets.chomp
 end
 
-word.pop
+words.pop
 
-while word[0] != nil
-	order.push word.pop
+while words[0] != nil
+	words.each do |word|
+		if word >= words.last
+			then ordered.push words.pop
+		end
+	end
 end
-
-puts order
-
-puts ''
-
-puts word
