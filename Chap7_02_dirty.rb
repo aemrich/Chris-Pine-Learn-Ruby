@@ -22,4 +22,4 @@ puts lesser
 puts ''
 puts greater
 
-test queue
+test queue2
