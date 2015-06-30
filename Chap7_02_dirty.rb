@@ -21,3 +21,5 @@ end
 puts lesser
 puts ''
 puts greater
+
+test queue
