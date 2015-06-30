@@ -1,5 +1,6 @@
 words = []
-ordered = []
+lesser = []
+greater = []
 
 
 while words.last!=''
@@ -8,10 +9,15 @@ end
 
 words.pop
 
-while words[0] != nil
-	words.each do |word|
-		if word >= words.last
-			then ordered.push words.pop
+while words[1] != nil
+		if words[0] >= words.last
+			then lesser.push words.pop
 		end
+		if words[0] < words.last
+			then greater.push words.pop
 	end
 end
+
+puts lesser
+puts ''
+puts greater
