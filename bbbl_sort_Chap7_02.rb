@@ -1,24 +1,32 @@
 #found bubble sort as "introductory sorting algorithm"
-words = Array.new
 
-words = [2, 3, 4, 5]
+words = []
 
-#while words.last != ''
-	#words.push gets.chomp
-#end
+while words.last != ''
+	words.push gets.chomp
+end
+
+words.pop
 
 class Array
-def swap!
-	self[1], self[2] = self[2], self[1]
+	def swap!(a, b)
+			self[a], self[b] = self[b], self[a]
+	end
 end
+		
+
+words.length-1.times do |i|
+	if words[i] > words[i+1]
+		words.swap!(i, i+1)
+	end
 end
-
-words.swap!
-
 
 
 
 puts words
 
-puts words.length
+puts ''
 
+puts "The array has #{words.length} elements in it."
+
+puts ''
