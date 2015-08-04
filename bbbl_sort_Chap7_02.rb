@@ -15,9 +15,9 @@ class Array
 end
 		
 
-words.length.times do |i|
+words.length.times.each do |i|
 	if words[i-1] > words[i]
-		words.swap!(i-1, i)
+		then words.swap!(i-1, i)
 	end
 end
 
